@@ -1,0 +1,505 @@
+/*css reseter*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	font-family: Helvetica, Arial;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*{ box-sizeing: border-box;}
+
+/*spacing*/
+.midspacing{ margin: 0px auto; }
+
+.paddingT-10{padding: 10px; }
+.paddingT-20{padding: 20px; }
+
+.spacingV{ margin:5px 0px; }
+.spacingT{ margin-top:10px; }
+.spacingT-20{ margin-top:20px; }
+.spacingT-35{ margin-top:35px; }
+.spacingB{ margin-bottom:10px !important; }
+.spacingB-20{ margin-bottom:20px; }
+.spacingB-50{ margin-bottom:50px; }
+.spacingH{ margin:0px 10px; }
+.spacingHR{ margin-right:10px !important; }
+.spacingHR-20{ margin-right:20px !important; }
+.spacingHL-40{ margin-left:40px !important; }
+
+.paddingH{ padding:0px 10px; }
+.paddingAll{ padding:10px; }
+.paddingV{ padding:10px 0px; }
+.paddingTB{ padding-top:20px; padding-bottom:20px; }
+.paddingH-13{ padding:0px 13px; }
+
+.lineH-30{line-height: 30px; }
+.lineH-40{line-height: 40px; }
+
+
+.box-shadow{
+	box-shadow: 0 3px 5px rgba(0,0,0,.16);
+}
+
+.box-shadow:hover{
+	box-shadow: 0 4px 10px rgba(0,0,0,.24);
+	transition: box-shadow .3s;
+}
+
+/*general elements*/
+h2{
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 20px;
+}
+
+hr{
+	border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+    width: 50px;
+}
+
+.wrap{
+	max-width: 960px;
+	margin: 0px auto;
+}
+
+.mainbtn{
+	background-color: #f59e01;
+    border: none;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 28px;
+}
+
+.secbtn{
+	background-color: #fff;
+    border: 1px #999 solid;
+    color: #333;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 28px;
+}
+
+.clearfix{
+	clear: both;
+}
+
+.topbarmobile{
+	display: none;
+}
+
+.fullscreenmenu{
+	display: none;
+}
+
+/* Topbar */
+.topbar{
+	height: 35px;
+	background: #e4e4e4;
+}
+
+.topbar ul{
+	float: right;
+}
+
+.topbar ul li{
+	float: left;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+.topbar a{
+	font-size: 14px;
+	text-decoration: none;
+	display: block;
+	
+}
+
+.facebook{
+	color: #4460a0;
+	padding-right: 8px; 
+}
+
+
+.topbar img{
+	float: left;
+	margin-top: -2px;
+	margin-right: 8px;
+}
+
+.topbar span{
+	float: left;
+}
+
+.topbar a:hover{
+	cursor: pointer; 
+}
+
+/* search */
+
+.search-box{
+	float: right;
+	margin-top: 4px;
+	margin-left: 20px;
+}
+
+.search-box input{ 
+	background: #fff url('../img/icon/search.png') no-repeat right;
+	border-radius: 3px;
+	padding-left: 10px;
+	border: none;
+    width: 300px;
+    height: 24px;
+}
+
+
+/* header */
+.header{
+	background-color: #fff;
+	margin-top: 10px;
+}
+
+.logo{
+	float: left;
+}
+
+.menu{
+	height: 80px;
+	margin: 0 auto 0 auto;
+	float: right;
+}
+
+.menu li{
+	float: left;
+	margin-left: 35px;
+}
+
+.menu a{
+	font-size: 16px;
+	letter-spacing: 3px;
+	color: #333;
+	line-height: 80px;
+	text-decoration: none;
+}
+
+.menu a:hover{
+	color: #f59e01;
+}
+
+.leftcolumn{
+	width: 75%;
+	margin: 0 auto 0 auto;
+	float: left;
+}
+
+.rightcolumn{
+	width: 25%;
+	margin: 0 auto 0 auto;
+	float: left;
+}
+
+.donation{
+}
+
+.donation p{
+	display: inline-block;
+	width: 50%;
+	line-height: 24px;
+}
+
+.progress {
+    background: #ddd;
+    border-radius: 5px;
+    height: 10px;
+    width: 100%;
+    padding: 0px;
+}
+
+.progress:after {
+    content: '';
+    display: block;
+    background: orange;
+    width: 50%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.board a{
+	font-size: 16px;
+	color: #333;
+	text-decoration: none;
+}
+
+.board a:hover{
+	color: #f59e01;
+}
+
+.topic{
+	line-height: 30px;
+}
+
+.address p{
+	line-height: 24px;
+}
+
+.contact p{
+	line-height: 24px;
+}
+
+.adoption{
+}
+
+.rabbits{
+	position: relative;
+	display: inline-block;
+	max-width: 340px;
+	padding: 5px;
+}
+
+.rabbits:hover{
+	background-color:#f1f1f1;
+	cursor: pointer;
+}
+
+.info h3{
+	float: left;
+	padding: 0;
+}
+
+.info p{
+	float: right;
+	text-align: center;
+	color: #333;
+	width: 20%;
+	border-left: 1px solid #ccc;
+}
+
+.sitegallery{
+}
+
+.gallery{
+	position: relative;
+	display: inline-block;
+	max-width: 340px;
+	padding: 5px;
+}
+
+.footer{
+	height: 150px;
+	clear: both;
+	background-color: #ccc;
+}
+
+.announcement{
+}
+
+.announcement p{
+	text-align: center;
+	padding-top: 59px;
+}
+
+@media (max-width: 1024px) {
+	h2{
+		font-size: 24px;
+		font-weight: bold;
+		line-height: 40px;
+		text-align: center;
+	}
+
+	p{
+		font-size: 18px;
+	}
+
+	.menu{
+		float: left;
+		width: 100%;
+	}
+
+	.menu li{
+		margin-left: 0;
+		text-align: center;
+		width: 20%;
+	}
+
+	.wrap{
+		padding-left: 1%;
+		padding-right: 1%;
+	}
+
+	.mainbtn{
+		width: 350px;
+		margin-bottom: 30px;
+	}
+
+	.secbtn{
+		width: 350px;
+		margin-bottom: 30px;
+	}
+
+	.leftcolumn{
+		width: 100%;
+	}
+
+	.rightcolumn{
+		width: 100%;
+	}
+
+	.rabbits{
+		max-width: 48%;
+		padding: 5px;
+	}
+
+	.gallery{
+		max-width: 48%;
+		padding: 5px;
+	}
+
+	.donation{
+		width: 60%;
+		margin: 0 20%;
+	}
+
+	.board{
+		width: 60%;
+		margin: 0 20%;
+	}
+
+	.address{
+		width: 60%;
+		margin: 0 20% 30px 20%;
+	}
+
+	.contact{
+		width: 60%;
+		margin: 0 20% 30px 20%;
+	}
+
+}
+
+@media (max-width: 425px) {
+	.mainbtn{
+		width: 200px;
+		margin-bottom: 30px;
+	}
+
+	.secbtn{
+		width: 200px;
+		margin-bottom: 30px;
+	}
+
+	.topbarmobile{
+		display: block;
+		height: 50px;
+		background-color: #f59e01;
+		position: relative;
+	}
+
+	.showfmenu{
+		padding-top: 5px;
+		padding-left: 5px;
+	}
+
+	.fullscreenmenu{
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 100;
+		display: none;
+		background-color: #f59e01;
+		width: 100%;
+		height: 120%;
+	}
+
+	.fullscreenmenu li{
+		width: 100%;
+		padding-top: 20%;
+		text-align: center;
+	}
+
+	.fullscreenmenu h3{
+		color: white;
+		font-size: 25px;
+	}
+
+	.fullscreenmenu a{
+		text-decoration: none;
+	}
+
+	.topbar{
+		display: none;
+	}
+
+	.menu{
+		display: none;
+	}
+
+	.rabbits{
+		max-width: 100%;
+		padding: 5px;
+	}
+
+	.sitegallery{
+		display: none;
+	}
+
+	.donation{
+		width: 80%;
+		margin: 0 10%;
+	}
+
+	.board{
+		width: 80%;
+		margin: 0 10%;
+	}
+	.address{
+		width: 80%;
+		margin: 0 10% 30px 10%;
+	}
+
+	.contact{
+		width: 80%;
+		margin: 0 10% 30px 10%;
+	}
+}
