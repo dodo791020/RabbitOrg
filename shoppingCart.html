@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>台灣流浪兔協會|愛心義賣</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+  crossorigin="anonymous">
+  <!--<link rel="stylesheet" href="css/style.css">-->
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/font-icon.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+
+<style>
+  .box{
+  	background: #DCDCDC;
+  	height:100px;
+  	color: white;
+  	margin-top: 20px;
+  	text-align: center;
+  	line-height: 100px;
+
+  }		
+
+</style>
+
+</head>
+
+<body>
+
+	<!-- headers -->
+	<nav class="navbar navbar-light bg-white">
+		<a class="navbar-brand" href="shoppingCart.html">
+			<i class="icon-rabbit"></i>
+			<h1 class="h4" style="display:inline-block; letter-spacing: 1px;">臺灣流浪兔協會 | 愛心義賣</h1>
+		</a>	
+
+	
+	<!--login-->
+	<a class="ml-auto" href="#">
+		<i class="icon-login" aria-hidden="true"></i>
+	</a>
+	<!-- Cart(btn、icon、badge)-->
+	<div class="dropdown ml-auto">
+		<button class="btn btn-sm btn-cart" data-toggle="dropdown" date-flip="false">
+			<i class="icon-cart-line" aria-hidden="true"></i>
+			<span class="badge badge-pill badge-danger">12</span>
+		</button>
+		<div class="dropdown-menu dropdown-menu-right" style="min-width: 300px">
+			<div class="px-4 py-3">
+			<h6 class="mb-2">已選擇商品</h6>
+			<table class="table table-sm">
+				<tbody>
+					<tr>
+						<td class="align-middle text-center">
+							<a href="#removeModal" class="text-muted" date-toggle="modal" data-title="刪除 XXX 1件">
+								<i class="fa fa-trash-alt" aria-hidden="true"></i>
+							</a>
+						</td>
+						<td class="align-middle">兔子飼料</td>
+						<td class="align-middle">1包</td>
+						<td class="align-middle">$300</td>
+					</tr>
+
+					<tr>
+						<td class="align-middle text-center">
+							<a href="#removeModal" class="text-muted" date-toggle="modal" data-title="刪除 XXX 1件">
+								<i class="fa fa-trash-alt" aria-hidden="true"></i>
+							</a>
+						</td>
+						<td class="align-middle">兔子飼料</td>
+						<td class="align-middle">1包</td>
+						<td class="align-middle">$300</td>
+					</tr>
+					
+
+				</tbody>
+
+			</table>
+			<a href="#" class="btn btn-primary btn-block">結帳去</a>
+				
+			</div>
+		</div>
+
+	</div>
+
+	</nav>	
+
+
+	<div class="jumbotron jumbotron-fluid">
+	  <div class="container">
+	  <h1 class="display-4">Fluid jumbotron</h1>
+	  <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+	  </div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3">
+				<!--01愛心商品-->
+				<div class="accordion sticky-top" id="accordion">
+				<!--menucard01-->	
+				<div class="menucard">
+						<!--Title-->
+					    <div class="card-header" id="headingOne">   					     
+					        <a class="btn btn-block text-left " data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+						    <img src="img/icon/rabbit-head.svg" width="30" height="30"></img>  
+						    <h3 class="h3">愛心商品</h3>
+					        </a>
+
+						</div>
+					<!--CollapseOne-->
+					<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+					    
+					    <!--Cardbody-->  
+						<div class="card-body p-0">
+						      	
+						    <!-- list-group-->
+						    <div class="list-group list-group-flush">
+													
+								<a href="#pane-1" class="list-group-item list-group-item-action active" data-toggle="list">
+				    					義賣</a>
+
+									<a href="#pane-2" class="list-group-item list-group-item-action" data-toggle="list">
+				    					兔奴愛物</a>		
+							</div>
+
+					    </div>
+				    </div>
+
+				</div>
+
+				<div class="menucard">
+				  <!-- 兔兔主食 -->	
+				    <div class="card-header" id="headingTwo">
+				    
+				        <a class="btn btn-block text-left" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+				        <img src="img/icon/heart.svg" width="24" height="24" alt=""></img>
+				         <h3 class="h3">兔兔食物</h3>
+				        </a>
+				     
+				    </div>
+				    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+				      <div class="card-body p-0">
+				        <!-- list-group-->
+				        <div class="list-group list-group-flush">
+											
+							<a href="#pane-1" class="list-group-item list-group-item-action" data-toggle="list">
+	    					牧草</a>
+
+							<a href="#pane-2" class="list-group-item list-group-item-action" data-toggle="list">
+	    					飼料</a>
+
+							<a href="#" class="list-group-item list-group-item-action">試吃包</a>
+
+						</div>
+				      </div>
+				    </div>
+				  </div>
+
+				  <!-- 03.兔兔保健 -->
+				  <div class="menucard">
+				    <div class="card-header" id="headingThree">
+				      
+				        <a class="btn btn-block text-left" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+				         <img src="img/icon/heart.svg" width="24" height="24" alt=""></img>	
+				          <h3 class="h3">兔兔保健</h3>
+				        </a>
+				  
+				    </div>
+
+				    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+				      <!--Cardbody-->  
+						<div class="card-body p-0">
+						      	
+						    <!-- list-group-->
+						    <div class="list-group list-group-flush">
+													
+								<a href="#pane-1" class="list-group-item list-group-item-action" data-toggle="list">
+				    					保健食品</a>
+
+									<a href="#pane-2" class="list-group-item list-group-item-action" data-toggle="list">
+				    					磨牙玩具</a>		
+							</div>
+
+					    </div>
+				    </div>
+				  </div>
+
+				<!-- 04.日常用品、器材 -->	
+				<div class="menucard">
+						<!--Title-->
+					    <div class="card-header" id="headingOne">   					     
+					        <a class="btn btn-block text-left " data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+						    <img src="img/icon/rabbit-head.svg" width="30" height="30"></img>  
+						    <h3 class="h3">日常用品、器材</h3>
+					        </a>
+
+						</div>
+					<!--CollapseFour-->
+					<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+					    
+					    <!--Cardbody-->  
+						<div class="card-body p-0">
+						      	
+						    <!-- list-group-->
+						    <div class="list-group list-group-flush">
+													
+								<a href="#pane-2" class="list-group-item list-group-item-action" data-toggle="list">
+				    				耗材、清潔用品</a>
+
+									<a href="#pane-2" class="list-group-item list-group-item-action" data-toggle="list">
+				    				墊材</a>	
+
+				    				<a href="#pane-2" class="list-group-item list-group-item-action" data-toggle="list">
+				    				便盆</a>
+
+				    				<a href="#pane-2" class="list-group-item list-group-item-action" data-toggle="list">
+				    				飲水器、飼料盒、草架</a>
+
+				    				<a href="#pane-2" class="list-group-item list-group-item-action" data-toggle="list">
+				    				梳毛用具、指甲剪</a>
+
+				    				<a href="#pane-2" class="list-group-item list-group-item-action" data-toggle="list">
+				    				籠子、圍片</a>
+
+
+
+							</div>
+
+					    </div>
+				    </div>
+
+				</div>
+
+				<!-- 05.雜物 -->	
+				<div class="menucard">
+						<!--Title-->
+					    <div class="card-header" id="headingOne">   					     
+					        <a class="btn btn-block text-left " data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+						    <img src="img/icon/rabbit-head.svg" width="30" height="30"></img>  
+						    <h3 class="h3">雜物</h3>
+					        </a>
+
+						</div>
+					<!--CollapseFour-->
+					<div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+					    
+					    <!--Cardbody-->  
+						<div class="card-body p-0">
+						      	
+						    <!-- list-group-->
+						    <div class="list-group list-group-flush">
+													
+								<a href="#pane-2" class="list-group-item list-group-item-action" data-toggle="list">
+				    				冬暖夏涼</a>
+
+									<a href="#pane-2" class="list-group-item list-group-item-action" data-toggle="list">
+				    				牽繩、兔衣服</a>	
+
+				    				<a href="#pane-2" class="list-group-item list-group-item-action" data-toggle="list">
+				    				草編製品</a>
+
+				    				<a href="#pane-2" class="list-group-item list-group-item-action" data-toggle="list">
+				    				手鉤毛線</a>
+
+							</div>
+
+					    </div>
+				    </div>
+
+				</div>
+
+
+				
+
+
+				  
+
+				
+				<div class="box">運費說明</div>
+				<div class="box">匯款說明</div>
+
+
+				</div>
+
+			</div>
+
+			<!-- right -->
+			<div class="col-md-9">
+				
+				<div class="tab-content">	
+
+					<div class="tab-pane active" id="pane-1">
+						
+						<div class="row">
+			
+							<div class="col-md-4 mb-4">
+								<div class="card box-shadow border-0 text-center">
+								    <img class="card-img-top" src="https://goo.gl/3hkTRw" alt="Card image cap">
+								    <div class="card-body">
+								      <h5 class="card-title">魏啥麻手工零食-水果類</h5>
+								      <p class="card-text">$100</p>
+								    </div>
+								    <div class="card-footer border-top-0 bg-white">
+								      <a href="#" class="btn btn-outline-warning btn-block">加入購物車</a>
+								    </div>
+								</div>    
+							</div> 
+
+							<div class="col-md-4 mb-4">
+								<div class="card box-shadow border-0 text-center">
+								    <img class="card-img-top" src="https://goo.gl/3hkTRw" alt="Card image cap">
+								    <div class="card-body">
+								      <h5 class="card-title">魏啥麻手工零食-水果類</h5>
+								      <p class="card-text">$100</p>
+								    </div>
+								    <div class="card-footer border-top-0 bg-white">
+								      <a href="#" class="btn btn-outline-warning btn-block">加入購物車</a>
+								    </div>
+								</div>    
+							</div> 
+
+							<div class="col-md-4 mb-4">
+								<div class="card box-shadow border-0 text-center">
+								    <img class="card-img-top" src="https://goo.gl/3hkTRw" alt="Card image cap">
+								    <div class="card-body">
+								      <h5 class="card-title">魏啥麻手工零食-水果類</h5>
+								      <p class="card-text">$100</p>
+								    </div>
+								    <div class="card-footer border-top-0 bg-white">
+								      <a href="#" class="btn btn-outline-warning btn-block">加入購物車</a>
+								    </div>
+								</div>    
+							</div> 
+							
+							<div class="col-md-4 mb-4">
+								<div class="card box-shadow border-0 text-center">
+								    <img class="card-img-top" src="https://goo.gl/3hkTRw" alt="Card image cap">
+								    <div class="card-body">
+								      <h5 class="card-title">魏啥麻手工零食-水果類</h5>
+								      <p class="card-text">$100</p>
+								    </div>
+								    <div class="card-footer border-top-0 bg-white">
+								      <a href="#" class="btn btn-outline-warning btn-block">加入購物車</a>
+								    </div>
+								</div>    
+							</div> 
+
+							<div class="col-md-4 mb-4">
+								<div class="card box-shadow border-0 text-center">
+								    <img class="card-img-top" src="https://goo.gl/3hkTRw" alt="Card image cap">
+								    <div class="card-body">
+								      <h5 class="card-title">魏啥麻手工零食-水果類</h5>
+								      <p class="card-text">$100</p>
+								    </div>
+								    <div class="card-footer border-top-0 bg-white">
+								      <a href="#" class="btn btn-outline-warning btn-block">加入購物車</a>
+								    </div>
+								</div>    
+							</div> 
+
+							<div class="col-md-4 mb-4">
+								<div class="card box-shadow border-0 text-center">
+								    <img class="card-img-top" src="https://goo.gl/3hkTRw" alt="Card image cap">
+								    <div class="card-body">
+								      <h5 class="card-title">魏啥麻手工零食-水果類</h5>
+								      <p class="card-text">$100</p>
+								    </div>
+								    <div class="card-footer border-top-0 bg-white">
+								      <a href="#" class="btn btn-outline-warning btn-block">加入購物車</a>
+								    </div>
+								</div>    
+							</div> 
+			    		</div>	<!-- row end-->
+					
+					</div> <!-- pane end-->
+
+					<div class="tab-pane" id="pane-2">
+						換頁TEST
+					</div>
+				
+				</div> <!-- content end-->
+
+					
+			</div> <!-- col-md-9 end-->
+
+
+		</div>
+	</div>
+	
+	
+
+
+</body>
+</html>
